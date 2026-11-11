@@ -1,0 +1,34 @@
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# IDEs & Editors
+.idea/
+*.iws
+*.iml
+*.ipr
+.vscode/
+.settings/
+.project
+.classpath
+.factorypath
+
+# Local Uploaded Files (Keep directory structure via .gitkeep)
+uploads/menu-images/*
+!uploads/menu-images/.gitkeep
+uploads/qr-codes/*
+!uploads/qr-codes/.gitkeep
+
+# OS & Logs
+.DS_Store
+Thumbs.db
+*.log
+logs/

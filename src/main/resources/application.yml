@@ -1,0 +1,39 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+spring:
+  application:
+    name: taq-restaurant-qr-pos
+  profiles:
+    active: dev
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 5MB
+      max-request-size: 10MB
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+    time-zone: Asia/Ho_Chi_Minh
+
+app:
+  jwt:
+    cookie-name: STAFF_ACCESS_TOKEN
+    secret: ${JWT_SECRET:TAQRestaurantSecretKeyForJwtSigningMustBeAtLeast256BitsLong2026!}
+    expiration-ms: 86400000
+  guest:
+    cookie-name: GUEST_SESSION_TOKEN
+  upload:
+    dir: uploads
+    menu-images-dir: uploads/menu-images
+    qr-codes-dir: uploads/qr-codes
