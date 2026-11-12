@@ -21,14 +21,9 @@ buildNumber.properties
 .classpath
 .factorypath
 
-# Local Uploaded Files (Keep directory structure via .gitkeep)
-uploads/menu-images/*
-!uploads/menu-images/.gitkeep
-uploads/qr-codes/*
-!uploads/qr-codes/.gitkeep
-
 # OS & Logs
 .DS_Store
 Thumbs.db
 *.log
 logs/
+
