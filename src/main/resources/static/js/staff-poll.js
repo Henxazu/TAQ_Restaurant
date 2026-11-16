@@ -1,5 +1,4 @@
 /**
  * [M3] All-in-One Staff Dashboard Polling (10-second interval)
- * Endpoint target: /staff/dashboard
+ * Endpoint target: GET /api/v1/staff/dashboard  -> ApiResponse<StaffDashboardDto>
  */
-
