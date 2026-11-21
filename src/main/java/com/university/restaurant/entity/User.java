@@ -26,19 +26,15 @@ import java.time.LocalDateTime;
  * Maps to the `users` table in MySQL 8.0.
  */
 @Entity
-@Table(
-    name = "users",
-    indexes = {
+@Table(name = "users", indexes = {
         @Index(name = "idx_users_role_status", columnList = "role, status")
-    }
-)
+})
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
 public class User {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
